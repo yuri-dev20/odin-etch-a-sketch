@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+    width: 100%;
+
+    /* center div */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#board {
+    min-width: 50%;
+    margin: 10px;
+}
+
+.gridRow {
+    border: 1px solid black;
+    display: flex;
+    flex: 1;
+}
+
+.gridRow > div {
+    background-color: black;
+    border: 1px solid blue;
+    color: #fff;
+    flex-grow: 2;
+}
