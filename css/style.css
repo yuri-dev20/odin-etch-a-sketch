@@ -1,8 +1,15 @@
+body {
+    background: rgb(32, 32, 32);
+}
+
+h1 {
+    color: #fff;
+}
+
 .container {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
-    /* center div */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,20 +17,47 @@
     gap: 1em;
 }
 
+#boardSize {
+    border: none;
+    text-align: center;
+    margin-bottom: 12px;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+#btns {
+    display: flex;
+    gap: 1em;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    background: rgb(247, 200, 98);
+    border-radius: 2em;
+    cursor: pointer;
+}
+
 #board {
-    min-width: 50%;
-    margin: 10px;
+    border: 10px solid rgb(177, 74, 74);
+    width: fit-content; 
+    margin: 0 auto;
 }
 
 .gridRow {
-    border: 1px solid black;
     display: flex;
-    flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridRow > div {
-    background-color: black;
-    border: 1px solid blue;
+    background-color: #fff;
+    border: 1px solid rgb(247, 200, 98);
     color: #fff;
-    flex-grow: 2;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
 }
